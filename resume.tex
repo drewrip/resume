@@ -1,5 +1,7 @@
 \documentclass[letterpaper,11pt]{article}
 
+%\usepackage{times}
+
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -14,7 +16,6 @@
 \usepackage[style=ieee,backend=biber,url=false]{biblatex}
 \addbibresource{local.bib}
 \input{glyphtounicode}
-
 
 %----------FONT OPTIONS----------
 % sans-serif
@@ -63,6 +64,15 @@
   }
 }
 
+\newcommand{\resumeTwoList}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -70,6 +80,7 @@
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
+
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
@@ -122,6 +133,14 @@
       {Bachelors of Science in Computer Science and Engineering; GPA: 3.92}{Aug. 2020 -- Expected Dec. 2023}
   \resumeSubHeadingListEnd
 
+%-----------AWARDS-----------
+\section{Awards}
+  \resumeSubHeadingListStart
+    \resumeTwoList
+      {The Ohio State University Computer Science Department}{Columbus, OH}
+      {Shan and Qian Shan Kuo Endowed Scholarship}{Award of \$2,000}
+      {Undergraduate Research Award}{Award (1 of 2 recipients) of \$1,000}
+  \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -137,6 +156,16 @@
         \resumeItem{Spoke at KubeCon + CloudNativeCon North America 2020 about my work developing kube-netc and entering the Kubernetes space: ``A High-Schooler's Guide to Kubernetes Network Observability''}
       \resumeItemListEnd 
 
+    \resumeSubheading
+      {Summer Research Intern}{Apr. 2021 -- Aug. 2021}
+      {HyperThought Group at Ohio State}{Columbus, OH (remote)}
+      \resumeItemListStart
+        \resumeItem{Created infrastructure for parsing and storing unstructured image metadata using Python}
+        \resumeItem{Developed code to detect defects in metals from electron microscopy images using OpenCV}
+        \resumeItem{Collaborated with the Air Force Research Labs to interface and upload images and metadata onto the HyperThought system for further analysis and identification}
+        \resumeItem{Assisted in writing an extended abstract and talk for Microscopy \& MicroAnalysis 2021 on how HyperThought can help doing large scale analysis of microscopy data}
+      \resumeItemListEnd
+
       \resumeSubheading
       {Undergraduate Research Intern}{Jun. 2022 -- Aug. 2022}
       {Microsoft Research}{Redmond, WA (remote)}
@@ -149,9 +178,9 @@
 
       \resumeSubheading
       {Software Engineering Intern, Performance and Scale Team}{May 2023 -- Aug. 2023}
-      {Redhat}{Boston, MA (remote)}
+      {Red Hat}{Boston, MA (remote)}
       \resumeItemListStart
-        \resumeItem{Worked on evaluating the Trimaran load-aware scheduler for use in Redhat Open Data Science (RHODS)}
+        \resumeItem{Worked on evaluating the Trimaran load-aware scheduler for use in Red Hat Open Data Science (RHODS)}
         \resumeItem{Designed large scale tests to evaluate the Trimaran scheduler under heavily load and in massive clusters}
         \resumeItem{Collaborated with the Performance and Scale Team and IBM Research to determine optimal use cases for the various scheduling strategies}
         \resumeItem{Used systems automation tools including Ansible and Python to coordinate reproducible and open source tests}
