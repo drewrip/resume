@@ -1,3 +1,29 @@
+@inproceedings{hui2023,
+    title={{Learning Distributed Protocols with Zero Knowledge}},
+    author={Hui, Yujie and Ripberger, Drew and Lu, Xiaoyi and Wang, Yang},
+    booktitle={Machine Learning for Systems 2023},
+    year={2023},
+    url={https://openreview.net/forum?id=u0Ncut8ru5}
+}
+
+@article{10.14778/3554821.3554885,
+author = {Ripberger, Drew and Gan, Yifan and Ren, Xueyuan and Blanas, Spyros and Wang, Yang},
+title = {{IsoBugView: Interactively Debugging Isolation Bugs in Database Applications}},
+year = {2022},
+issue_date = {August 2022},
+publisher = {VLDB Endowment},
+volume = {15},
+number = {12},
+issn = {2150-8097},
+url = {https://doi.org/10.14778/3554821.3554885},
+doi = {10.14778/3554821.3554885},
+abstract = {Database applications frequently use weaker isolation levels, such as Read Committed, for better performance, which may lead to bugs that do not happen under Serializable. Although a number of works have proposed methods to identify such isolation-related bugs, the difficulty of analyzing reported bugs is often underestimated, since these bugs often involve multiple complicated transactions interleaved in a specific order and they often require users' feedback to improve the accuracy of bug analysis.This paper presents IsoBugView, a tool to visualize isolation bugs and incorporate users' feedback: to address the challenge that a complicated bug may include much information and thus is hard to present, IsoBugView displays a high-level overview of the bug first and displays further information of individual pieces if the developer needs further investigation. To incorporate users' feedback, IsoBugView embeds hook functions into the backend analysis tool to preprocess a dependency graph and postprocess a found cycle and further allows a user to apply predefined hook functions in its graphic user interface. Our experience shows that IsoBugView has greatly improved our productivity of analyzing isolation bugs.},
+journal = {Proc. VLDB Endow. (Demo Track)},
+month = {aug},
+pages = {3726–3729},
+numpages = {4}
+}
+
 @article{10.14778/3407790.3407860,
 author = {Gan, Yifan and Ren, Xueyuan and Ripberger, Drew and Blanas, Spyros and Wang, Yang},
 title = {{IsoDiff: Debugging Anomalies Caused by Weak Isolation}},
@@ -14,29 +40,4 @@ journal = {Proc. VLDB Endow.},
 month = jul,
 pages = {2773–2786},
 numpages = {14}
-}
-@article{DBLP:journals/pvldb/RipbergerGRBW22,
-  author    = {Drew Ripberger and
-               Yifan Gan and
-               Xueyuan Ren and
-               Spyros Blanas and
-               Yang Wang},
-  title     = {{IsoBugView: Interactively Debugging Isolation Bugs in Database Applications}},
-  journal   = {Proc. {VLDB} Endow.},
-  volume    = {15},
-  number    = {12},
-  pages     = {3726--3729},
-  year      = {2022},
-  url       = {https://www.vldb.org/pvldb/vol15/p3726-ripberger.pdf},
-  timestamp = {Fri, 09 Sep 2022 17:48:59 +0200},
-  biburl    = {https://dblp.org/rec/journals/pvldb/RipbergerGRBW22.bib},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
-}
-
-@inproceedings{hui2023,
-    title={{Learning Distributed Protocols with Zero Knowledge}},
-    author={Hui, Yujie and Ripberger, Drew and Lu, Xiaoyi and Wang, Yang},
-    booktitle={Machine Learning for Systems 2023},
-    year={2023},
-    url={https://openreview.net/forum?id=u0Ncut8ru5}
 }

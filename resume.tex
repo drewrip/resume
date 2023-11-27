@@ -143,28 +143,24 @@
       {Undergraduate Research Award}{Award (1 of 2 recipients) of \$1,000}
   \resumeSubHeadingListEnd
 
+% -----------PUBLICATIONS-----------
+
+\nocite{*}
+\printbibliography[title=Publications]
+ 
+
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
-      
-    \resumeSubheading
-      {Software Engineering Intern}{Mar. 2020 -- Aug. 2020}
-      {Nirmata}{San Jose, CA (remote)}
-      \resumeItemListStart
-        \resumeItem{Worked to help develop observability solutions to supply data upstream to Nirmata's Kubernetes management dashboard}
-        \resumeItem{Used Go, eBPF and the Kubernetes API to construct a DaemonSet that monitors a cluster's network}
-        \resumeItem{Presented the project to the CEO, CTO and VP of Engineering and wrote the project's announcement blog post}
-        \resumeItem{Spoke at KubeCon + CloudNativeCon North America 2020 about my work developing kube-netc and entering the Kubernetes space: ``A High-Schooler's Guide to Kubernetes Network Observability''}
-      \resumeItemListEnd 
 
-    \resumeSubheading
-      {Summer Research Intern}{Apr. 2021 -- Aug. 2021}
-      {HyperThought Group at Ohio State}{Columbus, OH (remote)}
+      \resumeSubheading
+      {Software Engineering Intern, Performance and Scale Team}{May 2023 -- Aug. 2023}
+      {Red Hat}{Boston, MA (remote)}
       \resumeItemListStart
-        \resumeItem{Created infrastructure for parsing and storing unstructured image metadata using Python}
-        \resumeItem{Developed code to detect defects in metals from electron microscopy images using OpenCV}
-        \resumeItem{Collaborated with the Air Force Research Labs to interface and upload images and metadata onto the HyperThought system for further analysis and identification}
-        \resumeItem{Assisted in writing an extended abstract and talk for Microscopy \& MicroAnalysis 2021 on how HyperThought can help doing large scale analysis of microscopy data}
+        \resumeItem{Worked on evaluating the Trimaran load-aware scheduler for use in Red Hat Open Data Science (RHODS)}
+        \resumeItem{Designed large scale tests to evaluate the Trimaran scheduler under heavily load and in massive clusters}
+        \resumeItem{Collaborated with the Performance and Scale Team and IBM Research to determine optimal use cases for the various scheduling strategies}
+        \resumeItem{Used systems automation tools including Ansible and Python to coordinate reproducible and open source tests}
       \resumeItemListEnd
 
       \resumeSubheading
@@ -177,18 +173,36 @@
         \resumeItem{Wrote constraints to encode operations on merkle trees and signature verification into R1CS circuits}
       \resumeItemListEnd
 
-      \resumeSubheading
-      {Software Engineering Intern, Performance and Scale Team}{May 2023 -- Aug. 2023}
-      {Red Hat}{Boston, MA (remote)}
+    \resumeSubheading
+      {Undergraduate Research Intern}{Apr. 2021 -- Aug. 2021}
+      {HyperThought Group at Ohio State}{Columbus, OH (remote)}
       \resumeItemListStart
-        \resumeItem{Worked on evaluating the Trimaran load-aware scheduler for use in Red Hat Open Data Science (RHODS)}
-        \resumeItem{Designed large scale tests to evaluate the Trimaran scheduler under heavily load and in massive clusters}
-        \resumeItem{Collaborated with the Performance and Scale Team and IBM Research to determine optimal use cases for the various scheduling strategies}
-        \resumeItem{Used systems automation tools including Ansible and Python to coordinate reproducible and open source tests}
+        \resumeItem{Created infrastructure for parsing and storing unstructured image metadata using Python}
+        \resumeItem{Developed code to detect defects in metals from electron microscopy images using OpenCV}
+        \resumeItem{Collaborated with the Air Force Research Labs to interface and upload images and metadata onto the HyperThought system for further analysis and identification}
+        \resumeItem{Assisted in writing an extended abstract and talk for Microscopy \& MicroAnalysis 2021 on how HyperThought can help doing large scale analysis of microscopy data}
+      \resumeItemListEnd
+
+
+    \resumeSubheading
+      {Software Engineering Intern}{Mar. 2020 -- Aug. 2020}
+      {Nirmata}{San Jose, CA (remote)}
+      \resumeItemListStart
+        \resumeItem{Worked to help develop observability solutions to supply data upstream to Nirmata's Kubernetes management dashboard}
+        \resumeItem{Used Go, eBPF and the Kubernetes API to construct a DaemonSet that monitors a cluster's network}
+        \resumeItem{Presented the project to the CEO, CTO and VP of Engineering and wrote the project's announcement blog post}
+        \resumeItem{Spoke at KubeCon + CloudNativeCon North America 2020 about my work developing kube-netc and entering the Kubernetes space: ``A High-Schooler's Guide to Kubernetes Network Observability''}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
+  %-----------ACTIVITIES & INVOLVEMENT-----------
+\section{Activities \& Involvement}
+      \resumeItemListStart
+        \resumeItem{\emph{Girls Who Code} instructor and organizer (2019)}
+        \resumeItem{\emph{Design Develop Deploy (D3)} member (2020-2021)}
+        \resumeItem{Ohio State CSE Undergraduate Peer Mentor (2022)}
+      \resumeItemListEnd
 
 %-----------PROJECTS-----------
 \section{Projects}
@@ -214,10 +228,5 @@
     }}
  \end{itemize}
 
-% -----------PUBLICATIONS-----------
-
-\nocite{*}
-\printbibliography[title=Publications]
- 
 %-------------------------------------------
 \end{document}
